@@ -38,7 +38,7 @@ public class AltaProductoController extends HttpServlet{
             getServletContext().getRequestDispatcher("/ListadoProductosController").forward(req, resp);
         } catch (Exception e) {
             e.printStackTrace();
-            getServletContext().getRequestDispatcher("nuevo.jsp").forward(req, resp);
+            getServletContext().getRequestDispatcher("/nuevo.jsp").forward(req, resp);
         }
     }
 }
